@@ -1,0 +1,51 @@
+#nav_section {
+  z-index: 1;
+}
+#prof_img {
+  width: 130px;
+  height: 130px;
+}
+#course_table {
+  margin-left: 15px;
+}
+.nav-styles {
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 40px;
+  margin-right: 40px;
+  text-decoration: none;
+  color: #222;
+}
+.cool-grey {
+  background-color: #f6f9fc;
+}
+.top-bott-spacing {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.my-img-circle {
+  border-radius: 50%;
+  margin-left: 2.5em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+.letter-spacing {
+  letter-spacing: 2px;
+}
+.rect-images {
+  width: 180px;
+  height: 275px;
+}
+.text-button {
+  background: none;
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+.fixed {
+  width: 100%;
+  position: fixed;
+}
+.wrapper-div {
+
+}

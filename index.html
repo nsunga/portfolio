@@ -1,179 +1,194 @@
 <!DOCTYPE html>
 <head>
+  <title>Nick Sunga's Portfolio</title>
+
+  <!-- Fonts -->
   <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
-  <link rel="stylesheet" href="Skeleton-2.0.4/css/normalize.css">
-  <!--<link rel="stylesheet" href="Skeleton-2.0.4/css/skeleton.css">-->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css">
-  <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">-->
-  <link rel="stylesheet" href="Skeleton-2.0.4/css/styles.css">
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="styles.css" type="text/css">
+
+  <!-- jQuery -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+  <script src="navbar.js"></script>
+  <script src="invisibles.js"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
-
 <body>
   <div id="entire_page">
-    <section id="section_header">
+    <section id="nav_section" class="cool-grey">
       <div class="container">
-        <nav id="my_header">
-          <a href="https://github.com/nsunga" class="navbar-link">github</a>
-          <a href="https://twitter.com/nicksunga?lang=en" class="navbar-link">twitter</a>
-          <a href="#email" class="navbar-link">email</a> <!-- make this drop to a fillout form -->
-          <HR WIDTH="100%" style="margin-top:-1em; margin-bottom:0em;"></HR>
+        <nav class="letter-spacing">
+          <a href="#" class="nav-styles">github</a>
+          <a href="#" class="nav-styles">twitter</a>
+          <a href="#" class="nav-styles">email</a>
+          <a href="#" class="nav-styles" style="float: right;">top 10 kb24 moments</a>
+          <hr width="100%" style="margin-top: 0.5em; margin-bottom: 0em;">
         </nav>
       </div>
     </section>
-
-    <section id="my_bio" class="cool-grey">
+    <section id="bio_section">
       <div class="container">
         <div class="row">
-          <div class="one column">
-            <img src="black_square.png" id="prof_img" class="img-circle"></img>
+          <div class="col-md-2">
+            <img src="black_square.png" id="prof_img" class="my-img-circle top-bott-spacing">
           </div>
-          <div class="eleven columns">
-            <p class="section-spacing left-spacing">Hello! I'm Nick Sunga, a senior attending
+          <div class="col-md-10">
+            <p class="top-bott-spacing">Hello! I'm Nick Sunga, a senior attending
             Loyola Marymount University, and my weapons of choice are JavaScript and Java.
             Other than all things Computer Science related, I am an avid NBA fan
             ready to defend Kobe Bryant as a top 10 player. Another passion of mine
             is streetwear fashion.</p>
+            <p class="top-bott-spacing">Jusssst some filler text again</p>
           </div>
         </div>
       </div>
     </section>
-
-    <!-- NEED IMAGES AND BUTTON LINKS -->
-    <section id="my_projects" class="section-spacing">
+    <!-- rectangles should fade when hovered and then 'view more' CTA -->
+    <section id="projects_section" class="cool-grey">
       <div class="container">
         <div class="row">
-          <div class="twelve columns">
-            <h3 class="char-space">projects</h3>
-            <HR ALIGN="left" WIDTH="15%" style="margin-top:-1em; margin-bottom:1em;"></HR>
+          <div class="col-md-12">
+            <h3 class="letter-spacing">cool stuff</h3>
           </div>
         </div>
-        <div id="project_madmaan" class="row">
-          <div class="one column">
-            <img src="" alt="#madmaan">
-            <button class="button-primary top-spacing">view more</button>
+        <div class="row">
+          <div class="col-md-3">
+            <img src="black_rect_vert.jpg" id="madmaan_img" class="rect-images">
+            <h5 class="letter-spacing">madmaan</h5>
           </div>
-          <div class="eleven columns">
-            <p class="left-spacing">Worked on a compiler for the 'madmaan' programming language. The
-            language is translated into and is a form of JavaScript with 'mad'
-            characteristics infused with Python. Heavy duty included working on
-            entities of the syntax, code generation, and performing valid unit tests.
-            </p>
+          <div class="col-md-3">
+            <img src="black_rect_vert.jpg" id="boxes_img" class="rect-images">
+            <h5 class="letter-spacing">boxes</h5>
           </div>
-        </div>
-        <div id="project_draw_boxes" class="row">
-          <div class="one column">
-            <img src="" alt="#draw_boxes">
-            <button class="button-primary top-spacing">view more</button>
+          <div class="col-md-3">
+            <img src="black_rect_vert.jpg" id="gif_img" class="rect-images">
+            <h5 class="letter-spacing">gif me liberty</h5>
           </div>
-          <div class="eleven columns">
-            <p class="left-spacing">blah blah blah</p>
-          </div>
-        </div>
-        <div id="project_gifs" class="row">
-          <div class="one column">
-            <img src="" alt="#project_gifs">
-            <button class="button-primary top-spacing">view more</button>
-          </div>
-          <div class="eleven columns">
-            <p class="left-spacing">#insert_project_gifs_info</p>
+          <div class="col-md-3">
+            <img src="black_rect_vert.jpg" id="outfits_img" class="rect-images">
+            <h5 class="letter-spacing">outfits i guess</h5>
           </div>
         </div>
       </div>
     </section>
-
-    <!-- try to change the arrow to go up when dropdown is clicked lmao -->
-    <section id="my_employment" class="cool-grey section-spacing">
-      <div class="container" style="margin-bottom: 20px"> <!--move the instyle css -->
-        <div class="row">
-          <div class="twelve columns">
-            <h3 class="char-space" style="margin-top: 15px">previous work</h3> <!--move the instyle css -->
-            <HR ALIGN="left" WIDTH="25%" style="margin-top:-1em; margin-bottom:1em;"></HR>
-          </div>
-        </div>
-        <div class="row">
-          <div class="twelve columns">
-            <button class="link projects-button">product management intern <i class="fa fa-angle-down" aria-hidden="true"></i></button>
-            <div class="row projects">
-              <div class="twelve columns">
-                <h6 style="margin-left: 40px">Fullscreen Media ~ May - August 2017</h6>
-                <ul style="margin-left: 40px">
-                  <li>filler</li>
-                  <li>filler</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="twelve columns">
-            <button class="link projects-button">mathematics tutor <i class="fa fa-angle-down" aria-hidden="true"></i></button>
-            <div class="row projects">
-              <div class="twelve columns">
-                <h6 style="margin-left: 40px">Santa Monica College ~ June - August 2015</h6>
-                <ul style="margin-left: 40px">
-                  <li>Helped army veterans develop their problem solving in a one-on-one approach from levels of College Algebra to Calculus II and Elementary Statistics.</li>
-                  <li>Rotated between multiple students, but allotted my time efficiently in order to reinforce a beneficial learning environment</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="my_skills" class="section-spacing">
+    <section id="skillset_section">
       <div class="container">
         <div class="row">
-          <div class="twelve columns">
-            <h3 class="char-space">skillset <i class="fa fa-bar-chart" aria-hidden="true"></i></h3>
-            <HR ALIGN="left" WIDTH="20%" style="margin-top:-1em; margin-bottom:1em;"></HR>
-            <div id="skill_JS">JavaScript</div>
-            <div id="skill_jQuery">jQuery</div>
-            <div id="skill_Java">Java</div>
-            <div id="skill_OCaml">OCaml</div>
-            <div id="skill_SQL">SQL</div>
+          <div class="col-md-12">
+            <h3 class="letter-spacing">skillset</h3>
+          </div>
+        </div>
+        <div class="progress">
+          <div class="progress-bar progress-bar-info progress-bar-striped" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%;">
+            Javascript 80%
+          </div>
+        </div>
+        <div class="progress">
+          <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 85%;">
+            Java 85%
+          </div>
+        </div>
+        <div class="progress">
+          <div class="progress-bar progress-bar-info progress-bar-striped" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+            OCaml 60%
+          </div>
+        </div>
+        <div class="progress">
+          <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100" style="width: 55%;">
+            SQL 55%
           </div>
         </div>
       </div>
     </section>
-
-    <section id="my_email_contact" class="cool-grey section-spacing">
-      <div class="container" style="margin-bottom: 20px"> <!--move the instyle css -->
+    <section id="employment_section" class="cool-grey">
+      <div class="container">
         <div class="row">
-          <div class="twelve columns">
-            <h3 class="char-space" style="margin-top: 15px">contact</h3> <!--move the instyle css -->
-            <form>
-              <div class="row">
-                <div class="six columns">
-                  <label for="exampleEmailInput">Your email</label>
-                  <input class="u-full-width" type="email" placeholder="test@mailbox.com" id="exampleEmailInput">
-                </div>
-                <div class="six columns">
-                  <label for="exampleRecipientInput">Reason for contacting</label>
-                  <select class="u-full-width" id="exampleRecipientInput">
-                    <option value="Option 1">Questions</option>
-                    <option value="Option 2">Admiration</option>
-                    <option value="Option 3">Can I get your number?</option>
-                  </select>
-                </div>
-              </div>
-              <label for="exampleMessage">Message</label>
-              <textarea class="u-full-width" id="exampleMessage"></textarea>
-              <label class="example-send-yourself-copy">
-                <input type="checkbox">
-                <span class="label-body">Send a copy to yourself</span>
-              </label>
-              <input class="button-primary" type="submit" value="Submit">
-            </form>
+          <div class="col-md-12">
+            <h3 class="letter-spacing">employment</h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <button class="text-button"><h5 class="letter-spacing">product management intern <i class="fa fa-angle-double-down" aria-hidden="true"></i></h5></button>
+            <ul class="emp">
+              <li>Fullscreen Media, May-August 2017</li>
+              <li>focused on building and maintaining functional UI for Fullscreen Brand Campaigns: their influencer marketing service</li>
+              <li>performed specific data queries about their influencers and made reports based on data</li>
+            </ul>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <button class="text-button"><h5 class="letter-spacing">mathematics tutor <i class="fa fa-angle-double-down" aria-hidden="true"></i></h5></button>
+            <ul class="emp">
+              <li>Santa Monica College, June-August 2015</li>
+              <li>tutored in a one on one setting ranging from College Algebra, Statistics and Calculus II</li>
+              <li>performed specific data queries about their influencers and made reports based on data</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="coursework_section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h3 class="letter-spacing">coursework</h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <button class="text-button"><h5 class="letter-spacing">coursework <i class="fa fa-angle-double-down" aria-hidden="true"></i></h5></button>
+            <table id="course_table" class="table table-bordered table-striped">
+              <thead>
+                <tr>
+                  <th>Class</th>
+                  <th>Description</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row"><p>Data Structures</p></th>
+                  <td>Recursion, array lists, stacks, trees, maps, graphs</td>
+                </tr>
+                <tr>
+                  <th scope="row"><p>Algorithms</p></th>
+                  <td>Dynamic programming, cake cutting, divide and conquer, sorting and more</td>
+                </tr>
+                <tr>
+                  <th scope="row"><p>Theory of Computation</p></th>
+                  <td>Finite state machines, pushdown automata, turing machines, regexes</td>
+                </tr>
+                <tr>
+                  <th scope="row"><p>Interaction Design</p></th>
+                  <td>Focused on integrating good UI with intuition for human interaction</td>
+                </tr>
+                <tr>
+                  <th scope="row"><p>Programming Languages</p></th>
+                  <td>Multi-Paradigm languages, OOP, Functional, Declarative, Imperative programming</td>
+                </tr>
+                <tr>
+                  <th scope="row"><p>Compilers</p></th>
+                  <td>Practiced the exercise of designing, writing, documenting, and testing compilers and interpreters</td>
+                </tr>
+                <tr>
+                  <th scope="row"><p>SWE Laboratory</p></th>
+                  <td>Senior project (group)</td>
+                </tr>
+              </tbody>
+            </table>
           </div>
         </div>
       </div>
     </section>
   </div>
-
-  <script src='https://code.jquery.com/jquery-3.1.0.min.js'></script>
-  <script src="main.js"></script>
-  <script src="simple-skillbar.js"></script>
 </body>
