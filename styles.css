@@ -49,3 +49,14 @@
 .wrapper-div {
 
 }
+
+.textWithBlurredBg img{
+  transition:.3s;
+}
+.textWithBlurredBg:hover {
+  filter:blur(2px) brightness(60%);
+  box-shadow:0 0 16px cyan;
+}
+#madmaan_txt {
+  left: 100;
+}
