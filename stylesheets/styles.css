@@ -2,11 +2,15 @@
   z-index: 1;
 }
 #prof_img {
-  width: 130px;
-  height: 130px;
+  width: 100%;
+  height: 100%;
 }
 #course_table {
   margin-left: 15px;
+}
+#madmaan_text {
+  position: absolute;
+  color: white;
 }
 .nav-styles {
   font-size: 12px;
@@ -33,8 +37,8 @@
   letter-spacing: 2px;
 }
 .rect-images {
-  width: 180px;
-  height: 275px;
+  width: 100%;
+  height: 100%;
 }
 .text-button {
   background: none;
@@ -50,13 +54,35 @@
 
 }
 
-.textWithBlurredBg img{
+.textWithBlurredBg {
   transition:.3s;
 }
-.textWithBlurredBg:hover {
+.textWithBlurredBg:hover img {
   filter:blur(2px) brightness(60%);
   box-shadow:0 0 16px cyan;
 }
-#madmaan_txt {
-  left: 100;
+.textWithBlurredBg:hover :not(img) {
+  opacity: 1;
 }
+.textWithBlurredBg :not(img) {
+  opacity:0;
+  transition:.3s;
+}
+
+/*.textWithBlurredBg :not(img){
+  opacity:0;
+  transition:.3s;
+}
+.textWithBlurredBg:hover :not(img){
+  opacity:1;
+}*/
+
+/*
+.hideText{
+  opacity:0;
+  transition:.3s;
+}
+.hideText:hover {
+  opacity:1;
+}
+*/
